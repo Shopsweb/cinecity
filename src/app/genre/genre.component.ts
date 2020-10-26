@@ -10,29 +10,29 @@ import { ActivatedRoute } from '@angular/router';
 export class GenreComponent implements OnInit {
 
   genere;
-  listaMovieGenere=[];
-  constructor(private ricercaService: RicercaService, private route: ActivatedRoute) { }
+  listaMovieGenere = [];
+  constructor() { }
 
 
   ngOnInit() {
-
-    this.route.params.subscribe(params => {
-      this.genere = params['genere'];
-     
-      this.ricercaService.getGenre(this.genere).subscribe((data) => {
-        this.listaMovieGenere = Array.from(Object.keys(data), k => data[k]);
-        //console.log(this.listMoviePopular);
-      });
-
-    });
-
-
+    /*
+        this.route.params.subscribe(params => {
+          this.genere = params['genere'];
+         
+          this.ricercaService.getGenre(this.genere).subscribe((data) => {
+            this.listaMovieGenere = Array.from(Object.keys(data), k => data[k]);
+            //console.log(this.listMoviePopular);
+          });
     
-    //this.ricercaService.getPopular().subscribe((data) => {
-     // this.listaMovieGenere = Array.from(Object.keys(data), k => data[k]);
-      //console.log(this.listMoviePopular);
-    //});
+        });
     
+    
+        
+        //this.ricercaService.getPopular().subscribe((data) => {
+         // this.listaMovieGenere = Array.from(Object.keys(data), k => data[k]);
+          //console.log(this.listMoviePopular);
+        //});
+        **/
   }
 
 }

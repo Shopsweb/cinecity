@@ -38,10 +38,10 @@ registerLocaleData(it);
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      {path:'home', component:HomeComponent},
-        {path:'movie/:id', component:MovieComponent},
-        {path:'genre/:genere', component:GenreComponent},
-        {path: '', redirectTo: '/home', pathMatch: 'full'},
+      {path:'home', component:HomeComponent, pathMatch: 'full'},
+        {path:'movie/:id', component:MovieComponent , pathMatch: 'full'},
+        //{path:'genre/:genere', component:GenreComponent},
+        {path: '', redirectTo: 'home', pathMatch: 'full'},
     ])
   ],
   providers: [
