@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input,Output } from '@angular/core';
+import { RicercaService } from './ricerca.service';
+
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cinecity';
+  @Output() ricerca:string;
+  
+  title = 'CineCity';
+  
+  
+  movieQuery:string; 
+
+  constructor(private ricercaService: RicercaService) { }
+ 
+
+  ngOnInit() {
+    
+  }
+
 }

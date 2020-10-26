@@ -1,0 +1,97 @@
+<div class="schedamovie" *ngIf="detailMovie">
+
+
+  <div class="row">
+    <div>
+      <div class="col-md-4">
+        <img class="poster2" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/{{detailMovie.poster_path}}">
+      </div>
+      <div class="col-md-8">
+        <div class="titolo">
+          <h2>
+            <a href="/movie/{{detailMovie.id}}">{{detailMovie.title}}</a>
+            <span class="tag release_date">({{detailMovie.release_date | date:"yyyy"}})</span>
+          </h2>
+          <div class="facts">
+            <span class="certification">
+              R
+            </span>
+            <span class="release">
+              18/12/1965 (IT)
+            </span>
+            <span class="genres" *ngFor="let generi of detailMovie.genres">
+              - <a href="/genre/{{generi.id}}-{{generi.name}}">{{generi.name}}</a>
+            </span>
+            <span class="runtime"> <!--- 2h 12m--> </span>
+
+          </div>
+        </div>
+        <div class="row containerDescrizione">
+          <h2>Descrizione</h2>
+          <div class="col-md-8 descrizioneMovie">
+            {{detailMovie.overview}}
+          </div>
+        </div>
+        <div class="row containerDescrizione">
+          <!---
+          <div class="col-md-3">
+            <p>Sergio Leone</a></p>
+            <p class="character">Director, Screenplay</p>
+          </div>
+--->
+        </div>
+        <div>
+
+
+
+
+          <!---
+            <div class="col-md-3">
+              <p><a href="/person/57639-tonino-valerii?language=it-IT">Tonino Valerii</a></p>
+              <p class="character">Screenplay</p>
+            </div>
+
+            <div class="col-md-3">
+              <p><a href="/person/49892-fernando-di-leo?language=it-IT">Fernando Di Leo</a></p>
+              <p class="character">Screenplay</p>
+            </div>
+
+            <li class="col-md-3">
+              <p><a href="/person/34373-ryuzo-kikushima?language=it-IT">Ryûzô Kikushima</a></p>
+              <p class="character">Screenplay</p>
+            </li>
+
+            <li class="col-md-3">
+              <p><a href="/person/5026-akira-kurosawa?language=it-IT">Akira Kurosawa</a></p>
+              <p class="character">Screenplay</p>
+            </li>
+
+            <li class="col-md-3">
+              <p><a href="/person/16319-victor-andres-catena?language=it-IT">Víctor Andrés Catena</a></p>
+              <p class="character">Screenplay</p>
+            </li>
+
+            <li class="profile">
+              <p><a href="/person/99511-duccio-tessari?language=it-IT">Duccio Tessari</a></p>
+              <p class="character">Screenplay</p>
+            </li>
+
+            <li class="profile">
+              <p><a href="/person/16320-jaime-comas-gil?language=it-IT">Jaime Comas Gil</a></p>
+              <p class="character">Screenplay</p>
+            </li>
+          --->
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+ 
+
+   
+  
+</div>

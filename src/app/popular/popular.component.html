@@ -1,0 +1,256 @@
+<div class="container">
+  <div class="row">
+    <h2>Popolari</h2>
+  </div>
+  <div class='row' *ngIf="listPopular[3]">
+
+    <div class="carousel slide media-carousel" id="media">
+      <div class="carousel-inner">
+        <div class="item  active">
+          <div class="row">
+
+            <!--1-->
+            <div class="col-md-3">
+              <a routerLink="/movie/{{listPopular[3][0].id}}" title="{{listPopular[3][0].title}}">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://image.tmdb.org/t/p/w220_and_h330_face/{{listPopular[3][0].poster_path}}">
+
+                  <div class="card-block">
+                    <h5 class="text-bold">{{listPopular[3][0].title}} </h5>
+                    <h4>{{listPopular[3][0].release_date|date:"d MMM,y"}}</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--2-->
+            <div class="col-md-3">
+              <a href="/movie/{{listPopular[3][1].id}}" title="{{listPopular[3][1].title}}">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://image.tmdb.org/t/p/w220_and_h330_face/{{listPopular[3][1].poster_path}}">
+                  <div class="card-block">
+                    <h5 class="text-bold">{{listPopular[3][1].title}} </h5>
+                    <h4>{{listPopular[3][1].release_date|date:"d MMM,y"}}</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--3-->
+            <div class="col-md-3">
+              <a href="/movie/{{listPopular[3][2].id}}" title="{{listPopular[3][2].title}}">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://image.tmdb.org/t/p/w220_and_h330_face/{{listPopular[3][2].poster_path}}">
+                  <div class="card-block">
+                    <h5 class="text-bold">{{listPopular[3][2].title}} </h5>
+                    <h4>{{listPopular[3][2].release_date|date:"d MMM,y"}}</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--4-->
+            <div class="col-md-3">
+              <a href="/movie/{{listPopular[3][3].id}}" title="{{listPopular[3][3].title}}">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://image.tmdb.org/t/p/w220_and_h330_face/{{listPopular[3][3].poster_path}}">
+                  <div class="card-block">
+                    <h5 class="text-bold">{{listPopular[3][3].title}} </h5>
+                    <h4>{{listPopular[3][3].release_date|date:"d MMM,y"}}</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--end-->
+
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="row">
+
+            <!--5-->
+            <div class="col-md-3">
+              <a href="/movie/{{listPopular[3][4].id}}" title="{{listPopular[3][4].title}}">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://image.tmdb.org/t/p/w220_and_h330_face/{{listPopular[3][4].poster_path}}">
+                  <div class="card-block">
+                    <h5 class="text-bold">{{listPopular[3][4].title}} </h5>
+                    <h4>{{listPopular[3][4].release_date|date:"d MMM,y"}}</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--6-->
+            <div class="col-md-3">
+              <a href="/movie/{{listPopular[3][5].id}}" title="{{listPopular[3][5].title}}">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://image.tmdb.org/t/p/w220_and_h330_face/{{listPopular[3][5].poster_path}}">
+                  <div class="card-block">
+                    <h5 class="text-bold">{{listPopular[3][5].title}} </h5>
+                    <h4>{{listPopular[3][5].release_date|date:"d MMM,y"}}</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--7-->
+            <div class="col-md-3">
+              <a href="/movie/{{listPopular[3][6].id}}" title="{{listPopular[3][6].title}}">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://image.tmdb.org/t/p/w220_and_h330_face/{{listPopular[3][6].poster_path}}">
+                  <div class="card-block">
+                    <h5 class="text-bold">{{listPopular[3][6].title}} </h5>
+                    <h4>{{listPopular[3][6].release_date|date:"d MMM,y"}}</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--8-->
+            <div class="col-md-3">
+              <a href="/movie/{{listPopular[3][7].id}}" title="{{listPopular[3][7].title}}">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://image.tmdb.org/t/p/w220_and_h330_face/{{listPopular[3][7].poster_path}}">
+                  <div class="card-block">
+                    <h5 class="text-bold">{{listPopular[3][7].title}} </h5>
+                    <h4>{{listPopular[3][7].release_date|date:"d MMM,y"}}</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--end-->
+
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="row">
+
+            <!--9-->
+            <div class="col-md-3">
+              <a href="/movie/{{listPopular[3][8].id}}" title="{{listPopular[3][8].title}}">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://image.tmdb.org/t/p/w220_and_h330_face/{{listPopular[3][8].poster_path}}">
+                  <div class="card-block">
+                    <h5 class="text-bold">{{listPopular[3][8].title}} </h5>
+                    <h4>{{listPopular[3][8].release_date|date:"d MMM,y"}}</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--10-->
+            <div class="col-md-3">
+              <a href="/movie/{{listPopular[3][9].id}}" title="{{listPopular[3][9].title}}">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://image.tmdb.org/t/p/w220_and_h330_face/{{listPopular[3][9].poster_path}}">
+                  <div class="card-block">
+                    <h5 class="text-bold">{{listPopular[3][9].title}} </h5>
+                    <h4>{{listPopular[3][9].release_date|date:"d MMM,y"}}</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--11-->
+            <div class="col-md-3">
+              <a href="/movie/{{listPopular[3][10].id}}" title="{{listPopular[3][10].title}}">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://image.tmdb.org/t/p/w220_and_h330_face/{{listPopular[3][10].poster_path}}">
+                  <div class="card-block">
+                    <h5 class="text-bold">{{listPopular[3][10].title}} </h5>
+                    <h4>{{listPopular[3][10].release_date|date:"d MMM,y"}}</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--12-->
+            <div class="col-md-3">
+              <a href="/movie/{{listPopular[3][11].id}}" title="{{listPopular[3][11].title}}">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://image.tmdb.org/t/p/w220_and_h330_face/{{listPopular[3][11].poster_path}}">
+                  <div class="card-block">
+                    <h5 class="text-bold">{{listPopular[3][11].title}} </h5>
+                    <h4>{{listPopular[3][11].release_date|date:"d MMM,y"}}</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--end-->
+
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="row">
+
+            <!--13-->
+            <div class="col-md-3">
+              <a href="/movie/{{listPopular[3][12].id}}" title="{{listPopular[3][12].title}}">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://image.tmdb.org/t/p/w220_and_h330_face/{{listPopular[3][12].poster_path}}">
+                  <div class="card-block">
+                    <h5 class="text-bold">{{listPopular[3][12].title}} </h5>
+                    <h4>{{listPopular[3][12].release_date|date:"d MMM,y"}}</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--14-->
+            <div class="col-md-3">
+              <a href="/movie/{{listPopular[3][13].id}}" title="{{listPopular[3][13].title}}">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://image.tmdb.org/t/p/w220_and_h330_face/{{listPopular[3][13].poster_path}}">
+                  <div class="card-block">
+                    <h5 class="text-bold">{{listPopular[3][13].title}} </h5>
+                    <h4>{{listPopular[3][13].release_date|date:"d MMM,y"}}</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--15-->
+            <div class="col-md-3">
+              <a href="/movie/{{listPopular[3][14].id}}" title="{{listPopular[3][14].title}}">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://image.tmdb.org/t/p/w220_and_h330_face/{{listPopular[3][14].poster_path}}">
+                  <div class="card-block">
+                    <h5 class="text-bold">{{listPopular[3][14].title}} </h5>
+                    <h4>{{listPopular[3][14].release_date|date:"d MMM,y"}}</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--16-->
+            <div class="col-md-3">
+              <a href="/movie/{{listPopular[3][15].id}}" title="{{listPopular[3][15].title}}">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://image.tmdb.org/t/p/w220_and_h330_face/{{listPopular[3][15].poster_path}}">
+                  <div class="card-block">
+                    <h5 class="text-bold">{{listPopular[3][15].title}} </h5>
+                    <h4>{{listPopular[3][15].release_date|date:"d MMM,y"}}</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--end-->
+
+          </div>
+        </div>
+
+      </div>
+      <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+      <a data-slide="next" href="#media" class="right carousel-control">›</a>
+    </div>
+
+  </div>
+</div>

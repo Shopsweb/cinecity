@@ -1,0 +1,46 @@
+<!-- Main component for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <h1>Benvenuto. </h1>
+  <h2>Milioni di film, serie TV e persone da scoprire. Esplora ora.</h2>
+
+  <p>
+    <app-search (newItemEvent)="addItem($event)"></app-search>
+  </p>
+
+</div>
+
+<span *ngIf="listMovie[3];then condition1 else condition2"></span>
+
+<ng-template #condition1>
+  <h3>Risultati Ricerca</h3>
+  <div class="row">    
+  
+        <div *ngFor="let item of listMovie[3]" class="row well panel-info" >
+        
+          <div  class="col-md-1 listafilmImg">
+            <a routerLink="/movie/{{item.id}}" title="{{item.title}}">
+              <img alt="{{item.title}}" src="https://image.tmdb.org/t/p/w94_and_h141_bestv2/{{item.poster_path}}" />
+            </a>
+          </div>
+          <div class="col-md-11 listafilmDesc">
+            <a routerLink="/movie/{{item.id}}" title="{{item.title}}">
+            <h2 class="title">{{item.title}} <span class="release_date">
+                {{item.release_date | date:"d MMM, yyyy"}}</span>
+              </h2>
+            </a>
+
+            <div class="overview">
+              {{item.overview | textLimit}}
+            </div>
+          </div>
+
+        </div>
+     
+    
+  </div>
+
+</ng-template>
+
+<ng-template #condition2>
+  <app-popular [listPopular]="listMoviePopular"></app-popular>
+</ng-template>

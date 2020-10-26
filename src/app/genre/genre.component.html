@@ -1,0 +1,27 @@
+<div *ngIf="listaMovieGenere">
+
+  <h1>GENERE</h1>
+  
+  {{listaMovieGenere | json}}
+  <div class="container">
+		<div class="row">
+			<div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
+				<ul class="event-list">
+					<li *ngFor="let movieGenere of listaMovieGenere[3]">
+						
+						<img alt="Independence Day" src="https://image.tmdb.org/t/p/w94_and_h141_bestv2/{{movieGenere.poster_path}}" />
+						<div class="info">
+							<h2 class="title">{{movieGenere.title}}</h2>
+							<span class="release_date"> {{movieGenere.release_date | date:"d MMM, yyyy"}}</span>
+						</div>
+						
+					</li>
+
+				</ul>
+			</div>
+		</div>
+  </div>
+  
+</div>
+
+ 
